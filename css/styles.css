@@ -153,16 +153,13 @@ h1 {
 
 .image-gallery {
     display: flex;
-    flex-direction: column;
     gap: 20px;
-    width: 40%; /* Adjust this value to make images smaller or larger */
 }
 
 .image-container {
     border: 2px solid #0000ff;
     border-radius: 10px;
     overflow: hidden;
-    height: 250px; /* Set a fixed height for the containers */
 }
 
 .gallery-image {
@@ -215,19 +212,19 @@ footer {
 /* Responsive Design */
 @media (max-width: 1023px) {
     .hero {
-        flex-direction: column-reverse; /* Stack vertically on smaller screens */
+        flex-direction: column;
         align-items: center;
         text-align: center;
     }
 
     .hero-content {
-        padding-left: 0;
-        margin-top: 30px;
+        padding-right: 0;
+        margin-bottom: 30px;
     }
 
     .image-gallery {
-        width: 80%; /* Make images wider on smaller screens */
-        max-width: 500px; /* Limit maximum width */
+        width: 100%;
+        justify-content: center;
     }
 
     .image-container {
@@ -342,4 +339,10 @@ main {
     color: #333;
     max-width: 250px; /* Limit text width for better readability */
     margin-top: 10px; /* Add some space between title and description */
+}
+
+#terminal-container {
+    height: 100vh;
+    width: 100vw;
+    overflow: auto;
 }

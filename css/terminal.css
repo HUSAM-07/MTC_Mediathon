@@ -1,0 +1,172 @@
+#terminal-container {
+  margin: 0;
+  padding: 15px 20px;
+  min-height: 99%;
+  width: 100%;
+  min-width: 550px;
+  color: #519975;
+  background: #051c22;
+  font-family: cursor, monospace;
+  overflow-x: hidden;
+}
+
+#terminal-container ::selection {
+  color: #211830;
+  background-color: #519975;
+}
+
+#terminal-container ::-moz-selection {
+  color: #211830;
+  background-color: #519975;
+}
+
+#terminal-container textarea {
+  left: -1000px;
+  position: absolute;
+}
+
+#terminal-container b {
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+/* Cursor Start */
+#terminal-container .cursor {
+  font-size: 12px;
+  color: #73ABAD;
+  background-color: #73ABAD;
+  position: relative;
+  opacity: 1;
+  height: 1.5em;
+  width: 10px;
+  max-width: 10px;
+  transform: translateY(4px);
+  overflow: hidden;
+  text-indent: -5px;
+  display: inline-block;
+  text-decoration: blink;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
+}
+
+#terminal-container #command {
+  cursor: text;
+  height: 50px;
+  color: #73ABAD;
+}
+
+#terminal-container #liner {
+  line-height: 1.3em;
+  margin-top: -2px;
+  animation: show 0.5s ease forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
+}
+
+#terminal-container #liner::before {
+  color: #519975;
+  content: "visitor@bpdc_lyf.com:~$";
+}
+
+#terminal-container #liner.password::before {
+  content: "Password:";
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Cursor End */
+
+#terminal-container p {
+  display: block;
+  line-height: 1.3em;
+  margin: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  letter-spacing: 0.05em;
+  animation: typing 0.5s steps(30, end);
+}
+
+#terminal-container .no-animation {
+  animation: typing 0 steps(30, end);
+}
+
+#terminal-container .margin {
+  margin-left: 20px;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+#terminal-container .index {
+  color: #DCDCCC;
+}
+
+#terminal-container .color2 {
+  color: #B89076;
+}
+
+#terminal-container .command {
+  color: #73ABAD;
+  text-shadow: 0 0 5px #73ABAD; 
+}
+
+#terminal-container .error {
+  color: #B89076;
+}
+
+#terminal-container .white {
+  color: #fff;
+}
+
+#terminal-container .inherit,
+#terminal-container a {
+  color: #1da2c5;
+  text-shadow: 0 0 5px #1da2c5; 
+}
+
+#terminal-container a {
+  text-decoration-style: underline;
+}
+
+#terminal-container a:hover {
+  background: #73ABAD;
+  color: #211830;
+}
+
+#terminal-container a:focus {
+  outline: 0;
+}
+
+#terminal-container .yellow {
+  color:#FEE37A;
+}
+
+#terminal-container .darkyellow {
+  color: #deb102;
+}
+
+#terminal-container .blue {
+  color:#62CCE8;
+}
+
+#terminal-container .red {
+  color:#D1292F;
+}

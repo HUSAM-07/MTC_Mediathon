@@ -169,3 +169,20 @@ function loopLines(name, style, time) {
     addLine(item, style, index * time);
   });
 }
+
+function initializeTerminal() {
+    terminalOutput.innerHTML = `Welcome to BPDC FAQ. All BITS reserved.
+
+<pre class="ascii-art">
+   _____
+  /     \\
+ /       \\
+|  (o) (o)|
+ \\   <   /
+  \\  =  /
+   -----
+</pre>
+Welcome to my interactive web FAQ terminal.
+For a list of available commands, type 'help'.
+`;
+}
