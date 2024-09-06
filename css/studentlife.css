@@ -1,0 +1,63 @@
+/* Styles specific to the student life page */
+.hero h1 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.highlight {
+    color: #0000ff;
+}
+
+.featured-events h2 {
+    font-size: 0.8rem;
+    color: #0000ff;
+    margin-bottom: 1rem;
+}
+
+.event-cards {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.event-card {
+    flex: 1;
+    height: 200px;
+    background-color: #f0f0f0;
+    border-radius: 20px;
+}
+
+.clubs-activities, .other-activities {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.club, .activity {
+    flex: 1;
+    background-color: #f9f9f9;
+    padding: 1.5rem;
+    border-radius: 10px;
+}
+
+.club h3, .activity h3 {
+    margin-top: 0;
+}
+
+.learn-more {
+    background-color: transparent;
+    border: 2px solid #0000ff;
+    color: #0000ff;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+/* Student life page-specific media queries */
+@media (max-width: 768px) {
+    .event-cards, .clubs-activities, .other-activities {
+        flex-direction: column;
+    }
+}
