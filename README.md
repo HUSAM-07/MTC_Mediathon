@@ -6,13 +6,13 @@
 Explore the dynamic culture, events, and stories that make student life at BITS Pilani Dubai unique. <br>
 From vibrant festivals to favourite hangout spots, dive into the heart of campus experiences!
 
-![landing page](images/BITSGRAM%20page.png)
+![landing page](images/main_thumbnail.png)
 
 ## Also Featuring: The Terminal FAQ
 > Embrace the terminal lyf!
-- Discover solutions to some of the intriguing questions students often face.
+- Discover answers to some of the intriguing questions students often face.
 
-![Terminal FAQ](images/BITSGRAM_terminal2.png)
+![Terminal FAQ](images/terminal_thumbnail.png)
 
 ## Setup Guidelines
 ### Fork and Clone
