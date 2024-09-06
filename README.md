@@ -1,6 +1,6 @@
 >- Theme: Student Life
 >- Team CINS
->- Team members: Mohammed Husam Uddin, Yashwanth Karuparthi
+>- Team members: Mohammed Husamuddin, Yashwanth Karuparthi
 
 # [BITS • GRAM: A Portfolio Website for BITS Pilani Dubai Campus](https://bitsgram.netlify.app/)
 Explore the dynamic culture, events, and stories that make student life at BITS Pilani Dubai unique. <br>
