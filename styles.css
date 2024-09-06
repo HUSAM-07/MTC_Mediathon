@@ -89,7 +89,7 @@ nav {
 }
 
 .image-gallery {
-    flex: 0 0 50%; /* Reduce this value to decrease image size */
+    flex: 0 0 25%; /* Reduce this value to decrease image size */
     display: flex;
     gap: 20px;
     width: 40%; /* Reduced from 50% to 40% */
