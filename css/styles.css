@@ -2,8 +2,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f0f0f0;
-    color: #0000ff;
+    color: #333;
 }
 
 .announcement-bar {
@@ -27,11 +26,13 @@ body {
 }
 
 header {
+    /* Header styles */
     background-color: white;
     border-bottom: 1px solid #0000ff;
 }
 
 nav {
+    /* Navigation styles */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -169,6 +170,7 @@ h1 {
 }
 
 footer {
+    /* Footer styles */
     background-color: #f9e8d9;
     padding-top: 50px;
     position: relative;
