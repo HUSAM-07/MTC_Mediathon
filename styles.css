@@ -81,14 +81,17 @@ nav {
 
 .hero {
     display: flex;
+    flex-direction: row-reverse; /* This will move the images to the right */
     max-width: 1200px;
     margin: 50px auto;
     justify-content: space-between;
+    align-items: center;
 }
 
 .hero-content {
     flex: 1;
-    padding-right: 50px;
+    padding-right: 0;
+    padding-left: 50px; /* Add padding to the left instead of right */
 }
 
 .rating {
@@ -150,13 +153,16 @@ h1 {
 
 .image-gallery {
     display: flex;
+    flex-direction: column;
     gap: 20px;
+    width: 40%; /* Adjust this value to make images smaller or larger */
 }
 
 .image-container {
     border: 2px solid #0000ff;
     border-radius: 10px;
     overflow: hidden;
+    height: 250px; /* Set a fixed height for the containers */
 }
 
 .gallery-image {
@@ -209,19 +215,19 @@ footer {
 /* Responsive Design */
 @media (max-width: 1023px) {
     .hero {
-        flex-direction: column;
+        flex-direction: column-reverse; /* Stack vertically on smaller screens */
         align-items: center;
         text-align: center;
     }
 
     .hero-content {
-        padding-right: 0;
-        margin-bottom: 30px;
+        padding-left: 0;
+        margin-top: 30px;
     }
 
     .image-gallery {
-        width: 100%;
-        justify-content: center;
+        width: 80%; /* Make images wider on smaller screens */
+        max-width: 500px; /* Limit maximum width */
     }
 
     .image-container {
