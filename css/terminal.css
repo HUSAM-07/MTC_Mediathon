@@ -1,37 +1,59 @@
-#terminal-container {
+html, body {
   margin: 0;
-  padding: 15px 20px;
-  min-height: 99%;
+  padding: 0;
+  height: 100%;
   width: 100%;
-  min-width: 550px;
+}
+
+body.terminal-page {
   color: #519975;
   background: #051c22;
-  font-family: cursor, monospace;
-  overflow-x: hidden;
+  font-family: 'Courier New', Courier, monospace;
+  overflow: hidden;
 }
 
-#terminal-container ::selection {
-  color: #211830;
-  background-color: #519975;
+#terminal-container {
+  height: 100vh;
+  width: 100vw;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow-y: auto;
 }
 
-#terminal-container ::-moz-selection {
-  color: #211830;
-  background-color: #519975;
+#terminal {
+  height: calc(100% - 30px);
+  overflow-y: auto;
 }
 
-#terminal-container textarea {
-  left: -1000px;
+#command {
+  width: 100%;
   position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 10px 20px;
+  box-sizing: border-box;
 }
 
-#terminal-container b {
-  font-weight: bold;
-  text-decoration: underline;
+#liner {
+  line-height: 1.3em;
+  margin-top: -2px;
+  animation: show 0.5s ease forwards;
+  animation-delay: 1.2s;
+  opacity: 0;
 }
 
-/* Cursor Start */
-#terminal-container .cursor {
+#liner::before {
+  color: #519975;
+  content: "visitor@bpdc_lyf.com:~$";
+}
+
+#texter {
+  position: absolute;
+  top: -1000px;
+  left: -1000px;
+}
+
+.cursor {
   font-size: 12px;
   color: #73ABAD;
   background-color: #73ABAD;
@@ -54,29 +76,6 @@
   }
 }
 
-#terminal-container #command {
-  cursor: text;
-  height: 50px;
-  color: #73ABAD;
-}
-
-#terminal-container #liner {
-  line-height: 1.3em;
-  margin-top: -2px;
-  animation: show 0.5s ease forwards;
-  animation-delay: 1.2s;
-  opacity: 0;
-}
-
-#terminal-container #liner::before {
-  color: #519975;
-  content: "visitor@bpdc_lyf.com:~$";
-}
-
-#terminal-container #liner.password::before {
-  content: "Password:";
-}
-
 @keyframes show {
   from {
     opacity: 0;
@@ -86,23 +85,22 @@
   }
 }
 
-/* Cursor End */
-
-#terminal-container p {
+p {
   display: block;
   line-height: 1.3em;
   margin: 0;
   overflow: hidden;
   white-space: nowrap;
+  margin: 0;
   letter-spacing: 0.05em;
   animation: typing 0.5s steps(30, end);
 }
 
-#terminal-container .no-animation {
+.no-animation {
   animation: typing 0 steps(30, end);
 }
 
-#terminal-container .margin {
+.margin {
   margin-left: 20px;
 }
 
@@ -115,58 +113,25 @@
   }
 }
 
-#terminal-container .index {
-  color: #DCDCCC;
+/* Add more of your existing styles here */
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  #terminal-container {
+    padding: 10px;
+  }
+
+  #command {
+    padding: 5px 10px;
+  }
+
+  p, #liner {
+    font-size: 14px;
+  }
 }
 
-#terminal-container .color2 {
-  color: #B89076;
-}
-
-#terminal-container .command {
-  color: #73ABAD;
-  text-shadow: 0 0 5px #73ABAD; 
-}
-
-#terminal-container .error {
-  color: #B89076;
-}
-
-#terminal-container .white {
-  color: #fff;
-}
-
-#terminal-container .inherit,
-#terminal-container a {
-  color: #1da2c5;
-  text-shadow: 0 0 5px #1da2c5; 
-}
-
-#terminal-container a {
-  text-decoration-style: underline;
-}
-
-#terminal-container a:hover {
-  background: #73ABAD;
-  color: #211830;
-}
-
-#terminal-container a:focus {
-  outline: 0;
-}
-
-#terminal-container .yellow {
-  color:#FEE37A;
-}
-
-#terminal-container .darkyellow {
-  color: #deb102;
-}
-
-#terminal-container .blue {
-  color:#62CCE8;
-}
-
-#terminal-container .red {
-  color:#D1292F;
+@media (max-width: 480px) {
+  p, #liner {
+    font-size: 12px;
+  }
 }

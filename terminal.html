@@ -15,12 +15,11 @@
       </p>
     </div>
     
-    <div id="command" onclick="$('texter').focus();">
+    <div id="command" onclick="document.getElementById('texter').focus();">
       <textarea type="text" id="texter" onkeyup="typeIt(this, event)" onkeydown="typeIt(this, event); 
-        moveIt(this.value.length, event)" onkeypress="typeIt(this, event);" autofocus="">
-      </textarea>
+        moveIt(this.value.length, event)" onkeypress="typeIt(this, event);" autofocus=""></textarea>
       <div id="liner">
-        <span id="typer"></span><b class="cursor" id="cursor" style="left: 0px;">█</b>
+        <span id="typer"></span><b class="cursor" id="cursor">█</b>
       </div>
     </div>
   </div>
