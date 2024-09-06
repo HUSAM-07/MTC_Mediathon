@@ -1,3 +1,11 @@
+document.addEventListener('keydown', function(event) {
+  // Check if Ctrl+C is pressed
+  if (event.ctrlKey && event.key === 'c') {
+    event.preventDefault(); // Prevent the default browser behavior
+    window.location.href = 'index.html'; // Replace 'index.html' with your home page URL
+  }
+});
+
 var before = document.getElementById("before");
 var liner = document.getElementById("liner");
 var command = document.getElementById("typer"); 
