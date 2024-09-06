@@ -44,7 +44,6 @@ help = [
   '<span class="command">clear</span>          Clear terminal',
   '<span class="command">banner</span>         Display the header',
   '<span class="command">sudo</span>           Only if you\'re admin, pls',
-  '<span class="command">cd..</span>           Go back to portfolio',
 ]
 
 banner = [

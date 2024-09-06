@@ -1,7 +1,7 @@
 html, body {
   margin: 0;
-  padding: 0;
-  height: 100%;
+  padding-top: 30px;
+  /* height: 100%; */
   width: 100%;
 }
 
@@ -26,18 +26,18 @@ body.terminal-page {
   background-color: #519975;
 }
 
-#terminal-container {
+/* #terminal-container {
   height: calc(100vh - 30px);
   width: calc(100vw - 40px);
   overflow-y: auto;
-}
+} */
 
-#terminal {
+/* #terminal {
   height: calc(100% - 50px);
   overflow-y: auto;
-}
+} */
 
-#command {
+/* #command {
   cursor: text;
   height: 50px;
   color: #73ABAD;
@@ -47,7 +47,7 @@ body.terminal-page {
   left: 0;
   padding: 0 20px;
   box-sizing: border-box;
-}
+} */
 
 #liner {
   line-height: 1.3em;
@@ -65,12 +65,16 @@ body.terminal-page {
 #liner.password::before {
   content: "Password:";
 }
+textarea {
+  left: -1000px;
+  position: absolute;
+}
 
-#texter {
+/* #texter {
   position: absolute;
   top: -1000px;
   left: -1000px;
-}
+} */
 
 .cursor {
   font-size: 12px;
@@ -269,3 +273,5 @@ a:focus {
 }
 
 /* ... rest of your existing styles ... */
+
+
