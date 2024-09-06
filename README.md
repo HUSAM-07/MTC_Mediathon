@@ -10,7 +10,7 @@ From vibrant festivals to favourite hangout spots, dive into the heart of campus
 
 ## Also Featuring: The Terminal FAQ
 > Embrace the terminal lyf!
-- Discover solutions to some of the intriguing questions students often face.
+- Discover answers to some of the intriguing questions students often face.
 
 ![Terminal FAQ](images/terminal_thumbnail.png)
 
